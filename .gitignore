@@ -28,4 +28,4 @@ replay_pid*
 *.classpath
 *.project
 bin/
-.idea
+.idea/
