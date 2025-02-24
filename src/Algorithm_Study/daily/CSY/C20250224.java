@@ -29,13 +29,10 @@ public class C20250224 {
 			for(int j=N-1;j>=0;j--) {
 				if(max < arr[j]) {
 					max = arr[j];
+				}else{
+					sum += max - arr[j];
 				}
 
-				if(arr[j] < max){
-					sum += max - arr[j];
-				} else {
-					continue;
-				}
 			}
 			System.out.println("#" + tc +" " + sum);
 		}
