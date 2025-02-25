@@ -22,8 +22,8 @@ public class D20250225 {
 
             //로직
 //            int ans = searchFinishIndx(arr);
-            int ans = bruteForce(arr);
-
+//            int ans = bruteForce(arr);
+            int ans = delta(arr);
             //출력
             System.out.println("#" + tc + " " + ans);
         }
@@ -63,10 +63,6 @@ public class D20250225 {
 
     static int bruteForce(int[][] arr){
 
-        int[] dr = {0, 0, 1}; //좌, 우, 하
-        int[] dc = {-1, 1, 0}; //좌, 우, 하
-
-
         int ans = 0;
         // arr[0][0]에서 출발 이게 1이면 아래로, 0이면 좌우 탐색해서 1이면 0만날 때까지 증감.
         // 0만나면 다시 아래로.
@@ -97,4 +93,37 @@ public class D20250225 {
         return ans;
     }
 
+    static int delta(int[][] arr){
+
+        int[] dc = {-1, 1}; //좌, 우
+
+        int ans = 0;
+        // arr[0][0]에서 출발 이게 1이면 아래로, 0이면 좌우 탐색해서 1이면 0만날 때까지 증감.
+        // 0만나면 다시 아래로.
+        for(int i = 0; i < 100; i++){
+            if(arr[0][i] == 1) {
+                int r = 0;
+                int c = i;
+
+                while(r < 99){
+                    //좌
+                    if(c > 0 && arr[r][c+dc[0]] ==1){
+                        while(c > 0 && arr[r][c+dc[0]] ==1) c--;
+                    }
+                    //우
+                    else if(c < 99 && arr[r][c+dc[1]] == 1){
+                        while(c < 99 && arr[r][c+dc[1]] == 1) c++;
+                    }
+
+                    r++;
+                }// while문
+
+                if(arr[99][c] == 2){
+                    ans = i;
+                    break;
+                }
+            }
+        }
+        return ans;
+    }
 }
