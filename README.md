@@ -37,14 +37,14 @@
 📂 Algorithm-Study
  ├── 📂 daily
  │   ├── 📂 CSY
- │   │   ├── YYYY-MM-DD_problem_name.java
+ │   │   ├── DYYYY-MM-DD_problem_name.java
  │   │   ├── ...
  │   ├── 📂 SJG
- │   │   ├── YYYY-MM-DD_problem_name.java
+ │   │   ├── DYYYY-MM-DD_problem_name.java
  │   │   ├── ...
  │   ├── ...
  ├── 📂 common
- │   ├── 📂 YYYY-MM-DD
+ │   ├── 📂 CYYYY-MM-DD
  │   │   ├── problem_name.md
  │   │   ├── CSY.java
  │   │   ├── SJG.java
@@ -58,12 +58,12 @@
 
 ## 📝 코드 작성 방식
 1. **파일명 규칙**  
-   - 개인 문제: `YYYY-MM-DD_problem_name.java`
-   - 공통 문제: `공통문제/YYYY-MM-DD/이니셜.java`
+   - 개인 문제: `DYYYY-MM-DD_problem_name.java`
+   - 공통 문제: `공통문제/CYYYY-MM-DD/이니셜.java`
 
 2. **코드 업로드 방법**  
    - **개인 문제**: 본인 폴더에 저장 후 푸시  
-   - **공통 문제**: `공통문제/YYYY-MM-DD/` 폴더에 저장 후 PR 생성  
+   - **공통 문제**: `공통문제/DYYYY-MM-DD/` 폴더에 저장 후 PR 생성  
    - PR 생성 시 **템플릿 사용 필수!**  
 
 ---
@@ -108,15 +108,6 @@
 ## 💬 코드 리뷰 요청 사항
 -
 ```
----
-
-## 🎯 진행 상황
-| 날짜 | 박재은 | 서재곤 | 이영우 | 지성현 | 추수연 | 공통 문제 | 코드 리뷰 |
-|------|------|------|------|------|------|----------|----------|
-| YYYY-MM-DD | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| YYYY-MM-DD | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ |
-| YYYY-MM-DD | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ | ❌ |
-
 ---
 
 
