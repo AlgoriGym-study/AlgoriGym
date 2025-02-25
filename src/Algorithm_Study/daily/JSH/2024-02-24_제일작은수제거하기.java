@@ -1,54 +1,44 @@
-import java.io.File;
+import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Scanner;
-import java.util.Set;
+import java.util.List;
 
 class Solution {
-	public static void main(String args[]) throws Exception {
 
-		// Scanner sc = new Scanner(System.in);
-		Scanner sc = new Scanner(new File("input.txt"));
-		int T;
-		T = sc.nextInt();
+	public int[] solution(int[] arr) {
 
-		for (int test_case = 1; test_case <= T; test_case++) {
-			int N = sc.nextInt(); // N 입력
-			int M = sc.nextInt(); // M 입력
+		List<Integer> list = new ArrayList<>();
 
-			int[] arrN = new int[N];
-			int[] arrM = new int[M];
+		int[] answer = {};
 
-			for (int i = 0; i < N; i++) {
-				arrN[i] = sc.nextInt();
+		if (arr.length == 1) {
+			answer = new int[1];
+			answer[0] = -1;
+			return answer;
+		} else {
+			int[] checkMin = new int[arr.length];
+			int[] checkArr = new int[arr.length];
+			for (int i = 0; i < arr.length; i++) {
+				checkMin[i] = arr[i];
+				checkArr[i] = arr[i];
+				list.add(arr[i]);
 			}
-			for (int i = 0; i < M; i++) {
-				arrM[i] = sc.nextInt();
-			}
-
-			int max = Integer.MIN_VALUE;
-			if (N < M) {
-				for (int i = 0; i < M - N + 1; i++) {
-					int sum = 0;
-					for (int j = 0; j < N; j++) {
-						sum += arrN[j] * arrM[j + i];
-					}
-					max = Math.max(max, sum);
-
+			Arrays.sort(checkMin);
+			int deleteNum = checkMin[0];
+			int idx = 0;
+			for (int i = 0; i < checkMin.length; i++) {
+				if (checkArr[i] == deleteNum) {
+					idx = i;
 				}
-			} else {
-				for (int i = 0; i < N - M + 1; i++) {
-					int sum = 0;
-					for (int j = 0; j < M; j++) {
-						sum += arrM[j] * arrN[j + i];
-					}
-					max = Math.max(max, sum);
-				}
-
 			}
+			list.remove(idx);
+			answer = new int[list.size()];
+			for (int i = 0; i < list.size(); i++) {
+				answer[i] = list.get(i);
+			}
+			return answer;
 
-			System.out.println("#" + test_case + " " + max);
 		}
+
 	}
+
 }
