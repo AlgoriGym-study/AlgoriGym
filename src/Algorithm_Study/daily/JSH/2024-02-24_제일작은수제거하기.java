@@ -4,7 +4,12 @@ import java.util.List;
 
 class Solution {
 
-	public int[] solution(int[] arr) {
+
+		// Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(new File("D20250225.txt"));
+		int T;
+		T = sc.nextInt();
+
 
 		List<Integer> list = new ArrayList<>();
 
