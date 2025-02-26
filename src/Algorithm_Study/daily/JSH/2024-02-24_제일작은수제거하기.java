@@ -9,7 +9,7 @@ class Solution {
 	public static void main(String args[]) throws Exception {
 
 		// Scanner sc = new Scanner(System.in);
-		Scanner sc = new Scanner(new File("D20250225.txt"));
+		Scanner sc = new Scanner(new File("input.txt"));
 		int T;
 		T = sc.nextInt();
 
