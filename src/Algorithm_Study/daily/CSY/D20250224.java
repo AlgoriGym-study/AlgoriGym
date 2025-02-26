@@ -1,9 +1,8 @@
 package Algorithm_Study.daily.CSY;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class C20250224 {
+public class D20250224 {
 	public static void main(String[] args) throws Exception {
 	    solution();
 	}
