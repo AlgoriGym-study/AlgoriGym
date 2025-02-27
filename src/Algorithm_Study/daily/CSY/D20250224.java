@@ -35,6 +35,5 @@ public class D20250224 {
 			}
 			System.out.println("#" + tc +" " + sum);
 		}
-
 	}
 }
