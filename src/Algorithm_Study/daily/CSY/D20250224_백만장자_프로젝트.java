@@ -2,7 +2,7 @@ package Algorithm_Study.daily.CSY;
 
 import java.util.Scanner;
 
-public class D20250224 {
+public class D20250224_백만장자_프로젝트 {
 	public static void main(String[] args) throws Exception {
 	    solution();
 	}
