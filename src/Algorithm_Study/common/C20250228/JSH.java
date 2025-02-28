@@ -1,7 +1,7 @@
 package Algorithm_Study.common.C20250228;
 
 import java.util.Scanner;
-
+//오류 해결결
 public class JSH {
     public static void main(String[] args) throws Exception {
 
