@@ -5,11 +5,13 @@ import java.util.*;
 
 public class SJG {
 	public static void main(String[] args) throws Exception {
+				// 입력을 받기 위해 BufferedReader 객체 생성
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
         // 테스트 케이스의 개수
         int T = Integer.parseInt(br.readLine());
         
+				// 테스트케이스 만큼 반복
         for(int tc = 1; tc <= T; tc++) {
             // N*N 2차원 배열의 크기
             int N = Integer.parseInt(br.readLine());
