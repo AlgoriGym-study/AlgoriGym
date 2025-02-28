@@ -6,7 +6,6 @@ public class JSH {
     public static void main(String[] args) throws Exception {
 
         Scanner sc = new Scanner(System.in);
-//        Scanner sc = new Scanner(new File("input.txt"));
         int T;
         T = sc.nextInt();
 
