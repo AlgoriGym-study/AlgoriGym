@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//오류 해결
 public class D20250227 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

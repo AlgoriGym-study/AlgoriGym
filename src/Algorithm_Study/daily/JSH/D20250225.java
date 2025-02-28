@@ -1,4 +1,3 @@
-package Algorithm_Study.daily.JSH;
 
 import java.util.Arrays;
 
