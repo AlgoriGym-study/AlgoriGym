@@ -28,10 +28,10 @@ public class D20250302_큐 {
                     System.out.println(queue.isEmpty() ? 1 : 0);
                     break;
                 case "front":
-                    System.out.println(queue.peek());
+                    System.out.println(queue.isEmpty() ? -1 : queue.peek());
                     break;
                 case "back":
-                    System.out.println(((LinkedList<Integer>) queue).peekLast());
+                    System.out.println(queue.isEmpty() ? -1 : ((LinkedList<Integer>) queue).peekLast());
 
             }
 
@@ -50,6 +50,7 @@ back: 큐의 가장 뒤에 있는 정수를 출력한다. 만약 큐에 들어�
 * */
 
 /*
+*
 * 15
 push 1
 push 2
