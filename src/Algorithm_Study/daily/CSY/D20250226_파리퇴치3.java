@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class D20250226 {
+public class D20250226_파리퇴치3 {
     public static void main(String[] args) throws FileNotFoundException {
         Scanner sc = new Scanner(new File("src/Algorithm_Study/daily/CSY/input/D20250226.txt"));
 

@@ -1,10 +1,9 @@
 package Algorithm_Study.daily.CSY;
 
 import java.util.Arrays;
-import java.util.LinkedList;
 import java.util.Scanner;
 
-public class D20250227 {
+public class D20250227_숫자를_정렬하자 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);

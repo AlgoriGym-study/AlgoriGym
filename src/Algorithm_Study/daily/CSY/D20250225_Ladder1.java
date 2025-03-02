@@ -2,10 +2,9 @@ package Algorithm_Study.daily.CSY;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class D20250225 {
+public class D20250225_Ladder1 {
     public static void main(String[] args) throws FileNotFoundException {
         Scanner sc = new Scanner(new File("src/Algorithm_Study/daily/CSY/input/D20250225.txt"));
 
