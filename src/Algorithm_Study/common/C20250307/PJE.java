@@ -1,8 +1,8 @@
-package _0306;
+package Algorithm_Study.common.C20250307;
 
 import java.util.Scanner;
 
-public class 야구팀구성 {
+public class PJE {
 //야구팀 구성. 가장 많은 인원의 팀 구성하기 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
