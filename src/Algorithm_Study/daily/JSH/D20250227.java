@@ -1,3 +1,5 @@
+package Algorithm_Study.daily.JSH;
+
 import java.util.Scanner;
 //오류 해결
 public class D20250227 {

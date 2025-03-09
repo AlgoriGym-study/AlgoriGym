@@ -1,3 +1,5 @@
+package Algorithm_Study.common.C20250304;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;

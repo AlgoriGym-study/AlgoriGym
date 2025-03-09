@@ -1,3 +1,5 @@
+package Algorithm_Study.daily.JSH;
+
 class D20250226 {
     public long solution(int price, int money, int count) {
         long answer = 0;
