@@ -1,4 +1,6 @@
-public class D20250305 {
+package Algorithm_Study.daily.JSH;
+
+public class D20250306 {
 	public String solution(int n) {
 		String answer = "";
 		//수박을 받기 위해 배열의 길이가 2인 배열 만듬

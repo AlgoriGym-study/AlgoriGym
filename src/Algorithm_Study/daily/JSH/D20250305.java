@@ -1,6 +1,7 @@
+package Algorithm_Study.daily.JSH;
+
 import java.util.ArrayList;
 import java.util.List;
-
 public class D20250305 {
 	public int[] solution(int[] numbers) {
 		int[] answer = {};

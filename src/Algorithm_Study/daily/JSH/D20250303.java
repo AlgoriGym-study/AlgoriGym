@@ -1,3 +1,5 @@
+package Algorithm_Study.daily.JSH;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
