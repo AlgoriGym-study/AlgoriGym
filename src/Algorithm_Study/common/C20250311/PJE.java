@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class PJE {
-//나무 높이
+//swea 나무 높이
 	public static void main(String[] args) {
 		  Scanner sc = new Scanner(System.in);
 	        StringBuilder sb = new StringBuilder();
