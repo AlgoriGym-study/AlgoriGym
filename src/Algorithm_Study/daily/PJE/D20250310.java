@@ -1,7 +1,7 @@
 package Algorithm_Study.daily.PJE;
 
 import java.util.Scanner;
-
+//swea 부분 수열의 합 
 public class D20250310 {
 	static int [] nums;
 	static int N,K;
