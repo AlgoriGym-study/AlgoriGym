@@ -1,3 +1,5 @@
+package Algorithm_Study.daily.JSH;
+
 import java.util.Scanner;
 
 public class D20250228 {

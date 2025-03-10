@@ -10,7 +10,7 @@ class D20250224 {
 
         List<Integer> list = new ArrayList<>();
 
-        int[] answer = {};
+        int[] answer = new int[]{};
 
         if (arr.length == 1) {
             answer = new int[1];
