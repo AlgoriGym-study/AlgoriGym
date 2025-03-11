@@ -31,12 +31,19 @@ public class CSY {
                 odd += water%2;
             }
 
-            while(even >= odd-1){
-                ans = Math.max(ans, even*2 + odd);
+            if(even > odd){ // 짝수 날이 홀수 날보다 클 경우
 
-                even--;
-                odd += 2;
+                while(even > odd-1){
+                    even--;
+                    odd += 2;
+                }
+            } else { // 홀수 날이 짝수 날보다 클 경우
+                while(odd-even > 1){
+                    odd -= 2;
+                    even++;
+                }
             }
+            ans = odd + even;
 
             s += "#" + tc + " " + ans + "\n";
         }
