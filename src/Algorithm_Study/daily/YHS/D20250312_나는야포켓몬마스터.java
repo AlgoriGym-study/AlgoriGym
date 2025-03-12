@@ -1,48 +1,47 @@
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.HashMap;
+import java.util.StringTokenizer;
 
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
         StringBuilder sb = new StringBuilder();
 
-        int T = Integer.parseInt(br.readLine());
+        HashMap<String, Integer> dict = new HashMap<>();
+        HashMap<Integer, String> dict2 = new HashMap<>();
 
-        for (int tc = 1; tc <= T; tc++) {
-            StringTokenizer st = new StringTokenizer(br.readLine());
-            int N = Integer.parseInt(st.nextToken());
-            int M = Integer.parseInt(st.nextToken());
+        int N = Integer.parseInt(st.nextToken());
+        int M = Integer.parseInt(st.nextToken());
 
-            Deque<int[]> dq = new LinkedList<>(); // 문서 인덱스, 중요도 저장
-            List<Integer> priority = new ArrayList<>(); // 중요도 리스트 (정렬 가능)
+        for (int i = 1; i <= N; i++) {
+            String name = br.readLine();
+            dict.put(name, i);
+            dict2.put(i, name);
+        }
 
-            st = new StringTokenizer(br.readLine());
-            for (int i = 0; i < N; i++) {
-                int p = Integer.parseInt(st.nextToken());
-                dq.add(new int[]{i, p}); // 인덱스, 중요도 저장
-                priority.add(p); // 중요도 리스트 추가
-            }
+        for (int i = 0; i < M; i++) {
+            String input = br.readLine();
+            if (isNumeric(input))
+                sb.append(dict2.get(Integer.parseInt(input)));
+            else
+                sb.append(dict.get(input));
+            sb.append("\n");
+        }
 
-            priority.sort(Collections.reverseOrder()); // 중요도 내림차순 정렬
-            int count = 0, index = 0; // index: 현재 가장 높은 중요도를 가리킴
+        System.out.println(sb.toString());
 
-            while (!dq.isEmpty()) {
-                int[] front = dq.poll(); // 문서 정보 가져오기
-                int idx = front[0], value = front[1];
+    }
 
-                if (value == priority.get(index)) { // 현재 가장 높은 중요도와 일치
-                    count++;
-                    index++; // 다음 높은 중요도로 이동
-
-                    if (idx == M) { // 목표 문서가 출력된 경우 종료
-                        sb.append(count).append("\n");
-                        break;
-                    }
-                } else {
-                    dq.addLast(front); // 중요도가 낮으면 다시 뒤로 보냄
-                }
+    static boolean isNumeric(String str) {
+        for (int i = 0; i < str.length(); i++) {
+            if (!Character.isDigit(str.charAt(i))) {
+                return false;
             }
         }
-        System.out.print(sb); // 최종 출력
+
+        return true;
     }
 }
