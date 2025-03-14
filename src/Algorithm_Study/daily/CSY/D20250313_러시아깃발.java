@@ -12,7 +12,6 @@ public class D20250313_러시아깃발 {
     static char[] color = {'W', 'B', 'R'};
     static int min;
 
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
