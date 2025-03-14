@@ -10,6 +10,7 @@ public class D20250314_상호의_배틀필드 {
     static final int[] DR = {-1, 1, 0, 0}; // U, D, L, R
     static final int[] DC = {0, 0, -1, 1}; // U, D, L, R
 
+    
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int T = sc.nextInt();
