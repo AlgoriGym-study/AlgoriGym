@@ -8,6 +8,7 @@ public class D20250317 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine());
         
+        // 하나하나 그려가며 찾은 규칙..
         int[] dp = new int[N+1 > 4 ? N+1 : 4];
         dp[0] = 0;
         dp[1] = 1;
