@@ -3,7 +3,7 @@ package Algorithm_Study.common.C20250304;
 import java.util.Scanner;
 
 //N X N 크기의 판이 있다. 판의 각 칸에는 돌이 있거나 없을 수 있다. 돌이 가로, 세로, 대각선 중 하나의 방향으로 다섯 개 이상 연속한 부분이 있는지 없는지 판정하는 프로그램
-public class 오목판정 {
+public class PJE {
 
 	static int[] dr = { 0, 1, 1, 1 }; // 오른쪽, 아래, 아래-왼,오 대각선
 	static int[] dc = { 1, 0, -1, 1 }; // 오른쪽, 아래, 아래-왼,오 대각선
