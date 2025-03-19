@@ -1,19 +1,17 @@
-package Algorithm_Study.daily.JSH;
-
-import java.util.Scanner;
-//오류 해결
-public class D20250227 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-
-        for (int i = 0; i < b; i++) {
-            for (int j = 0; j < a; j++) {
-                System.out.print("*");
-            }
-            System.out.println();
-        }
-
-    }
-}
+//import java.util.Scanner;
+////오류 해결
+//public class D20250227 {
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        int a = sc.nextInt();
+//        int b = sc.nextInt();
+//
+//        for (int i = 0; i < b; i++) {
+//            for (int j = 0; j < a; j++) {
+//                System.out.print("*");
+//            }
+//            System.out.println();
+//        }
+//
+//    }
+//}
