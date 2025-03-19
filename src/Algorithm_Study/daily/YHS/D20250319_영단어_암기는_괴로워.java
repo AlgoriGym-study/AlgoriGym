@@ -1,3 +1,5 @@
+package Algorithm_Study.daily.YHS;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

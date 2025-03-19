@@ -3,7 +3,7 @@ package Algorithm_Study.common.C20250318;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class NQueen2 {
+public class PJE {
 	static int N;
 	static int[] queen; //열
 	static boolean[] visit;

@@ -1,3 +1,5 @@
+package Algorithm_Study.daily.YHS;
+
 import java.io.*;
 
 public class D20250317_N과M_3 {
