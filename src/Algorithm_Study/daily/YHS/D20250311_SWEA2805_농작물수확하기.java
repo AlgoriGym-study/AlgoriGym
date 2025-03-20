@@ -1,8 +1,10 @@
+package Algorithm_Study.daily.YHS;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
  
-public class Solution {
+public class D20250311_SWEA2805_농작물수확하기 {
     static int[][] farm;
     static int[] dc = {-1,1};
         public static void main(String[] args) throws IOException {
