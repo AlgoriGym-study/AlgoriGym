@@ -56,3 +56,41 @@ class D2025_03_20_SWEA_중간값_구하기 {
         sc.close();
     }
 }
+//class 구버전{
+//	public static void main(String[] args) {
+//		Scanner sc = new Scanner(System.in);
+//		int T = sc.nextInt();
+//		for(int tc = 1; tc <= 1; tc++ ) {
+//			int N = sc.nextInt();
+//			int number = 20171109;
+//			Double A = sc.nextDouble();
+//			Double sum = 0.0;
+//			
+//			PriorityQueue<Double> pq = new PriorityQueue<>();
+//			PriorityQueue<Double> pq2;
+//			
+//			pq.add(A);
+//			
+//			for(int i = 0; i < N; i++) {
+//				Double num1 = sc.nextDouble();
+//				Double num2 = sc.nextDouble();
+//				pq.add(num1);
+//				pq.add(num2);
+//				
+//				pq2 = new PriorityQueue<>(pq); // pq 복사
+//				int size = pq.size();
+//				Double mid = 0.0;
+//				for(int j = 0; j < size/2; j++) {
+//					pq2.poll();	
+//				}
+//				mid = pq2.poll();
+//				sum += mid;
+//			}
+//			
+//			int answer = (int)(sum % number);
+//			System.out.println("#" + tc + " " + answer);
+//			
+//		}//tc
+//		
+//	}
+//}
