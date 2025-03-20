@@ -1,6 +1,8 @@
+package Algorithm_Study.common.C20250318;
+
 import java.io.*;
 
-public class Solution {
+public class YHS {
     static int[] chess;
     static int N;
     static int ans;
