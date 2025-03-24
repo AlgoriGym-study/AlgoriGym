@@ -51,6 +51,7 @@ public class D20250323_NQUEEN {
             perm(level+1);
             sel[i] = false; // 백트래킹
 
+
         }
 
     }
