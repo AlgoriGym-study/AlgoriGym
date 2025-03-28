@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class N과M4 {
+public class D20250326_N과M4 {
     static boolean[] visited;
     static int[] result;
     static int[] num;
