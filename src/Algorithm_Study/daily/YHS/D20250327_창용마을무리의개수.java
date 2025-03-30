@@ -46,7 +46,7 @@ public class D20250327_창용마을무리의개수 {
 
     static void union(int x, int y) {
         x = find(x);
-        y = find(y);
+        y = find(y);   
 
         if (x == y)
             return;
