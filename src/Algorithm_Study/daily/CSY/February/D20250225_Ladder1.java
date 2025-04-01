@@ -1,4 +1,4 @@
-package Algorithm_Study.daily.CSY;
+package Algorithm_Study.daily.CSY.February;
 
 import java.io.File;
 import java.io.FileNotFoundException;

@@ -1,6 +1,5 @@
-package Algorithm_Study.daily.CSY;
+package Algorithm_Study.daily.CSY.March;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class D20250324_N과M2 {

@@ -1,9 +1,9 @@
-package Algorithm_Study.daily.CSY;
+package Algorithm_Study.daily.CSY.March;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class D20250331 {
+public class D20250331_미로탐색 {
 
 
         static int N, M;
