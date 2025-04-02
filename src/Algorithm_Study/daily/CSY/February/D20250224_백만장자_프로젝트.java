@@ -1,4 +1,4 @@
-package Algorithm_Study.daily.CSY;
+package Algorithm_Study.daily.CSY.February;
 
 import java.util.Scanner;
 

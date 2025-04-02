@@ -1,4 +1,4 @@
-package Algorithm_Study.daily.CSY;
+package Algorithm_Study.daily.CSY.March;
 
 import java.util.HashMap;
 import java.util.Map;

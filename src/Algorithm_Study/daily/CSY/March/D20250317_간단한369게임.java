@@ -1,4 +1,4 @@
-package Algorithm_Study.daily.CSY;
+package Algorithm_Study.daily.CSY.March;
 
 import java.util.Scanner;
 public class D20250317_간단한369게임{
