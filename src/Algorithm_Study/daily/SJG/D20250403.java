@@ -6,9 +6,9 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class D20250403 {
-    static int N, K;
-    static final int MAX_SPOT = 100_001;
-    static int[] time;
+    static int N, K; // N: 시작 위치, K: 목표 위치
+    static final int MAX_SPOT = 100_001;  // 최대 위치 -> 0 ~ 100_000
+    static int[] time; // 각 위치에 도달하는 최소 시간
     
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -46,7 +46,7 @@ public class D20250403 {
             for(int next : nextList) {
                 if(next >= 0 && next < MAX_SPOT) {
                     if(time[next] == -1) {
-                        time[next] = time[curr] + 1;
+                        time[next] = time[curr] + 1;  // 다음 위치에 도달하는 최소 시간
                         q.offer(next);
                     }
                 }
