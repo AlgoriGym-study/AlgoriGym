@@ -1,6 +1,6 @@
 package Algorithm_Study.daily.CSY.April;
 import java.util.*;
-public class D20250404 {
+public class D20250404_두수뽑아서더하기 {
 
 
         public int[] solution(int[] numbers) {

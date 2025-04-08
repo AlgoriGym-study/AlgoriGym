@@ -1,3 +1,5 @@
+package Algorithm_Study.common.C20250404;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -19,7 +21,7 @@ class YHS {
 
         @Override
         public int compareTo(Node o) {
-            return Integer.compare(this.cost, o.cost); //비용(여물) 오름차순 정렬
+            return Integer.compare(this.cost, o.cost); // 비용(여물) 오름차순 정렬
         }
     }
 
@@ -62,7 +64,7 @@ class YHS {
     }
 
     static void dijkstra() {
-        PriorityQueue<Node> pq = new PriorityQueue<>(); //우선순위 큐, 비용 오름차순
+        PriorityQueue<Node> pq = new PriorityQueue<>(); // 우선순위 큐, 비용 오름차순
         pq.add(new Node(1, dist[1]));
 
         while (!pq.isEmpty()) {
@@ -70,7 +72,7 @@ class YHS {
             check[currIdx] = true;
 
             for (Node next : graph.get(currIdx)) {
-                if (!check[next.idx] && dist[next.idx] > dist[currIdx] + next.cost) { //해당 정점에 대해 가장 적은 비용으로 초기화 과정 반복
+                if (!check[next.idx] && dist[next.idx] > dist[currIdx] + next.cost) { // 해당 정점에 대해 가장 적은 비용으로 초기화 과정 반복
                     dist[next.idx] = dist[currIdx] + next.cost;
 
                     pq.add(new Node(next.idx, dist[next.idx]));
