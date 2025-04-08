@@ -1,3 +1,5 @@
+package Algorithm_Study.common.C20250401;
+
 import java.io.*;
 import java.util.*;
 
@@ -24,8 +26,8 @@ public class YHS {
 
 	static int N, K, S, targetX, targetY;
 	static int[][] grid;
-	static int[] dx = {-1, 1, 0, 0};
-	static int[] dy = {0, 0, -1, 1};
+	static int[] dx = { -1, 1, 0, 0 };
+	static int[] dy = { 0, 0, -1, 1 };
 	static PriorityQueue<Virus> pq;
 
 	public static void main(String[] args) throws IOException {
@@ -37,7 +39,6 @@ public class YHS {
 
 		grid = new int[N][N];
 		pq = new PriorityQueue<>();
-
 
 		for (int i = 0; i < N; i++) {
 			st = new StringTokenizer(br.readLine());
@@ -54,19 +55,19 @@ public class YHS {
 		targetX = Integer.parseInt(st.nextToken()) - 1;
 		targetY = Integer.parseInt(st.nextToken()) - 1;
 
-
 		bfs();
 
 		System.out.println(grid[targetX][targetY]);
 	}
-	
+
 	static void bfs() {
 		while (!pq.isEmpty()) {
 			Virus curr = pq.poll();
 			int row = curr.x;
 			int col = curr.y;
 
-			if (curr.time == S) break; // S초가 지나면 종료
+			if (curr.time == S)
+				break; // S초가 지나면 종료
 
 			for (int d = 0; d < 4; d++) {
 				int nx = curr.x + dx[d];
