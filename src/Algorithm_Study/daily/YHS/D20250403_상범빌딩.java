@@ -1,3 +1,5 @@
+package Algorithm_Study.daily.YHS;
+
 import java.io.*;
 import java.util.*;
 
