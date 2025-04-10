@@ -27,7 +27,6 @@ public class D20250410 {
 
 		adj = new ArrayList[V+1];
 		for(int i = 1; i <= V; i++) adj[i] = new ArrayList<>();
-
 		dist = new int[V+1];
 		for(int i = 0; i < V+1; i++) dist[i] = INF;
 		dist[K] = 0;
