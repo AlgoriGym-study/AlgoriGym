@@ -21,6 +21,7 @@ public class D20250411 {
                 for(String numStr : numStrs) dq.add(Integer.parseInt(numStr));
             }
             
+            // check
             boolean checkReversed = false;
             boolean checkErr = false;
             
