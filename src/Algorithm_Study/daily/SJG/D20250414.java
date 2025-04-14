@@ -16,7 +16,7 @@ public class D20250414 {
     for(int i = 0; i < N; i++) {
       String[] input = br.readLine().split(" ");
       for(int j = 0; j < N; j++) adj[i][j] = Integer.parseInt(input[j]);
-    }    // 입력완료
+    }    // 입력완료!
 
     for(int k = 0; k < N; k++) {
       for(int i = 0; i < N; i++) {
