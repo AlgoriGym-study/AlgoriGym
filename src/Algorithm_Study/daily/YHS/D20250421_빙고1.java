@@ -2,7 +2,7 @@ package Algorithm_Study.daily.YHS;
 
 import java.io.*;
 
-public class D20250421_빙고 {
+public class D20250421_빙고1 {
     static int[][] bingo;
     static int count;
 
