@@ -1,13 +1,6 @@
 package Algorithm_Study.common.C20250401;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
-import java.util.Scanner;
-
-import _0401.PJE.Virus;
+import java.util.*;
 
 //경쟁적전염
 public class PJE {
