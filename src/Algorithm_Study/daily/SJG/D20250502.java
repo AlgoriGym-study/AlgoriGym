@@ -12,7 +12,7 @@ public class D20250502 {
         
         for (int i = 0; i < len; i++) {
             char c = s.charAt(i);
-            // 이전에 등장한 적이 있으면 거리 계산, 아니면 -1
+            // 이전에 등장한 적이 있으면 거리 계산, 아니면 -1 할당
             if (lastIndex.containsKey(c)) {
                 answer[i] = i - lastIndex.get(c);
             } else {
