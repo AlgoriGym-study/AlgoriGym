@@ -5,7 +5,6 @@ import java.util.*;
 
 public class D20250503 {
 	public int solution(String str1, String str2) {
-        int answer = 0;
         Map<String, Integer> str1Map = makeSet(str1);
         Map<String, Integer> str2Map = makeSet(str2);
         
