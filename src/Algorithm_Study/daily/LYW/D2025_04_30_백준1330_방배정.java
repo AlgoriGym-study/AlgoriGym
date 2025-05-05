@@ -1,6 +1,8 @@
+package Algorithm_Study.daily.LYW;
+
 import java.util.Scanner;
 
-public class Main {
+public class D2025_04_30_백준1330_방배정 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
