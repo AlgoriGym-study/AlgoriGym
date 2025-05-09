@@ -3,7 +3,7 @@ package Algorithm_Study.daily.CSY.May;
 public class D20250508_점프와_순간이동 {
     public int solution(int n) {
         int ans = 0;
-        // 순간이동은 지금까지 온 거리 * 2
+        // 순간이동은 지금까지 온 거리 * 2 : 건전지 없음
         // K까지 점프 : 건전지 K
 
         // n의 약수 중 최솟값까지 점프 혹은 점프 + 순간이동으로
