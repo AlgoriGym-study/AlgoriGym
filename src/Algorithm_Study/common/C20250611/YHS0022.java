@@ -35,7 +35,7 @@ class YHS0022 {
 
         for (int i=0; i<requests.length; i++) {
             String target = requests[i];
-            dfs();
+            bfs();
             if (target.length() == 2) removeAll(String.valueOf(target.charAt(0)));
             else remove(target);
         }
@@ -50,7 +50,7 @@ class YHS0022 {
         return answer;
     }
 
-    void dfs() {
+    void bfs() {
         vis = new boolean[n+2][m+2];
         Queue<Node> q = new ArrayDeque<>();
         q.add(new Node(0,0));
