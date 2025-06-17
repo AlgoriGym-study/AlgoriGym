@@ -1,3 +1,4 @@
+package Algorithm_Study.common.C20250611;
 import java.util.*;
 
 // 좌표저장용 클래스
