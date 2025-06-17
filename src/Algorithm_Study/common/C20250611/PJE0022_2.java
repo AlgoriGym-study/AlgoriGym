@@ -12,7 +12,7 @@ class Point {
     }
 }
 
-class Solution {
+class PJE0022_2 {
     static char[][] map; // storage를 2차원 문자 배열로 변환
     static int n, m; // 행 열
     static int[] dr = {-1, 0, 1, 0}; // 상우하좌
