@@ -1,7 +1,7 @@
 package Algorithm_Study.common.C20250611;
 import java.util.*;
 // SWEA 달팽이 숫자
-public class Solution {
+public class PJE0023_2 {
     static int[] dr = {0, 1, 0, -1};
     static int[] dc = {1, 0, -1, 0};
 
