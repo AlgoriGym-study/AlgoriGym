@@ -7,7 +7,8 @@
    - 2번 : 추수연
    - 3번 : 서재곤
    - 4번 : 윤현석
-   - 5번 : 이영우 
+   - 5번 : 이영우
+   - 6번 : 김미림
 2. **공통 과제 풀이 후 코드 리뷰**
    - 문제 풀이 후 화요일까지 깃허브에 업로드 (꼼꼼한 주석 작성)
    - 수요일 미팅 전까지 코드 리뷰 진행 (꼼꼼한 코드 리뷰 필수!)
@@ -117,6 +118,7 @@
 | 닉네임 | GitHub |
 |-----|--------|
 | 추수연 | [GitHub](https://github.com/CHUSUEYEON) |
+| 김미림 | [GitHub](https://github.com/marinRim) |
 | 박재은 | [GitHub](https://github.com/JayeunPark) |
 | 서재곤 | [GitHub](https://github.com/Jgone2) |
 | 이영우 | [GitHub](https://github.com/youngwoo2) |
