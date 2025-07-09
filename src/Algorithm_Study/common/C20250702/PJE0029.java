@@ -3,7 +3,7 @@ package Algorithm_Study.common.C20250702;
 import java.util.*;
 
 // 프로그래머스 사칙연산
-class PJE0029 {
+public class PJE0029 {
     int[][] maxDp; // 구간 최대값 
     int[][] minDp; // 구간 최소값
     String[] arr; // 문자열배열
