@@ -5,15 +5,6 @@ import java.util.Scanner;
 
 import java.util.*;
 
-class Node {
-    int x;
-    int y;
-
-    public Node(int x, int y) {
-        this.x = x;
-        this.y = y;
-    }
-}
 
 public class LYW0022 {
     String[][] map;
@@ -98,5 +89,15 @@ public class LYW0022 {
             if (vis[ny][nx]) return true;
         }
         return false;
+    }
+
+    static class Node {
+        int x;
+        int y;
+
+        public Node(int x, int y) {
+            this.x = x;
+            this.y = y;
+        }
     }
 }
