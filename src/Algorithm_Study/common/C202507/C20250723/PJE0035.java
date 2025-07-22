@@ -2,7 +2,7 @@ package Algorithm_Study.common.C202507.C20250723;
 import java.util.*;
 
 // 백준 닭싸움 팀 정하기
-public class PJE0034 {
+public class PJE0035 {
 
     static int N, M, result = 0;
     static int[] parent;         // 부모 배열
