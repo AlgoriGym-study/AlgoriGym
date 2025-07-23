@@ -62,7 +62,7 @@ public class YHS0030 {
                 visited[i] = true;
                 selected.add(chickens.get(i));
                 btr(depth + 1, i + 1);
-                selected.removeLast();
+                selected.remove(selected.size() - 1);
                 visited[i] = false;
             }
         }
