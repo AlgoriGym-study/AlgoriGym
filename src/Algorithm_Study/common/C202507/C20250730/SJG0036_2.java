@@ -5,91 +5,92 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class SJG0036_2 {
-    static int N, M, maxSum;
-    static int[][] board;
+    static int N, M;
+    static int[][] field;
     static boolean[][] visited;
-    static int[] dx = {-1, 1, 0, 0};
-    static int[] dy = {0, 0, -1, 1};
+    static int max = Integer.MIN_VALUE;
+    
+    static int[] dr = {0, 1, 0, -1};
+    static int[] dc = {1, 0, -1, 0};
     
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine());
+        StringTokenizer st = new StringTokenizer(br.readLine(), " ");
         N = Integer.parseInt(st.nextToken());
         M = Integer.parseInt(st.nextToken());
-        
-        board = new int[N][M];
+        field = new int[N][M];
         visited = new boolean[N][M];
         
         for(int i = 0; i < N; i++) {
-            st = new StringTokenizer(br.readLine());
+            st = new StringTokenizer(br.readLine(), " ");
             for(int j = 0; j < M; j++) {
-                board[i][j] = Integer.parseInt(st.nextToken());
+                field[i][j] = Integer.parseInt(st.nextToken());
             }
         }
         
-        maxSum = 0;
-        
-        for(int i = 0; i < N; i++) {
-            for(int j = 0; j < M; j++) {
+        // 모든 위치에서 탐색 시작
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < M; j++) {
                 visited[i][j] = true;
-                dfs(i, j, 1, board[i][j]);
+                dfs(i, j, field[i][j], 1);  // DFS로 I, O, S, L 모양 처리
                 visited[i][j] = false;
                 
-                checkTShape(i, j); // T자 모양 별도 체크
+                checkT(i, j);  // T자 모양 별도 처리
             }
         }
         
-        System.out.println(maxSum);
+        System.out.println(max);
     }
     
-    // DFS로 4칸 연결된 모양 찾기 (T자 제외)
-    static void dfs(int x, int y, int depth, int sum) {
-        if(depth == 4) {
-            maxSum = Math.max(maxSum, sum);
+    // DFS로 4개 연결된 테트로미노 탐색 (T자 제외)
+    static void dfs(int row, int col, int sum, int count) {
+        if (count == 4) {
+            max = Math.max(max, sum);
             return;
         }
         
-        for(int i = 0; i < 4; i++) {
-            int nx = x + dx[i];
-            int ny = y + dy[i];
+        for (int i = 0; i < 4; i++) {
+            int nr = row + dr[i];
+            int nc = col + dc[i];
             
-            if(nx < 0 || nx >= N || ny < 0 || ny >= M || visited[nx][ny]) {
+            if (nr < 0 || nr >= N || nc < 0 || nc >= M || visited[nr][nc]) {
                 continue;
             }
             
-            visited[nx][ny] = true;
-            dfs(nx, ny, depth + 1, sum + board[nx][ny]);
-            visited[nx][ny] = false;
+            visited[nr][nc] = true;
+            dfs(nr, nc, sum + field[nr][nc], count + 1);
+            visited[nr][nc] = false;  // 백트래킹
         }
     }
     
-    // T자 모양 체크
-    static void checkTShape(int x, int y) {
-        // T자의 4가지 형태
-        int[][][] tShapes = {
-            {{0,0},{0,1},{0,2},{1,1}}, // ㅗ
-            {{0,0},{1,0},{2,0},{1,1}}, // ㅓ
-            {{0,1},{1,0},{1,1},{1,2}}, // ㅜ
-            {{0,1},{1,0},{1,1},{2,1}}  // ㅏ
+    // T자 모양 별도 처리
+    static void checkT(int row, int col) {
+        // 4가지 T자 모양 확인
+        int[][] tShapes = {
+            {1, 2, 3},  // ㅗ 모양 (아래쪽이 중심)
+            {0, 2, 3},  // ㅜ 모양 (위쪽이 중심)  
+            {0, 1, 3},  // ㅏ 모양 (왼쪽이 중심)
+            {0, 1, 2}   // ㅓ 모양 (오른쪽이 중심)
         };
         
-        for(int[][] shape : tShapes) {
-            int sum = 0;
+        for (int[] shape : tShapes) {
+            int sum = field[row][col];  // 중심값
             boolean valid = true;
             
-            for(int[] pos : shape) {
-                int nx = x + pos[0];
-                int ny = y + pos[1];
+            // 3개 방향으로 뻗어나가는 T자 확인
+            for (int dir : shape) {
+                int nr = row + dr[dir];
+                int nc = col + dc[dir];
                 
-                if(nx < 0 || nx >= N || ny < 0 || ny >= M) {
+                if (nr < 0 || nr >= N || nc < 0 || nc >= M) {
                     valid = false;
                     break;
                 }
-                sum += board[nx][ny];
+                sum += field[nr][nc];
             }
             
-            if(valid) {
-                maxSum = Math.max(maxSum, sum);
+            if (valid) {
+                max = Math.max(max, sum);
             }
         }
     }
