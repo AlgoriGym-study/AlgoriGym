@@ -13,6 +13,6 @@ public class D20250916 {
 				cnt++;
 			}
 			
-			return cnt > 500 ? -1 : cnt;
+			return cnt >= 500 ? -1 : cnt;
 		}
 	}
