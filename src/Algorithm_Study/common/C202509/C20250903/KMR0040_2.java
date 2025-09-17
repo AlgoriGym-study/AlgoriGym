@@ -24,13 +24,6 @@ public class KMR0040_2 {
                 }
             }
         }// 입력
-
-
-
-
-
-
-
         br.close();
 
     }
