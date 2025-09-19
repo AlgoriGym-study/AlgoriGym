@@ -46,7 +46,10 @@ public class KMR0045 {
 
         long blank = 2L * times.length; // 채울 수 있는 칸의 수
 
-        if (result < blank) return true; // 왜 같을때는 안될까?
+        if (result < blank) return true;
+        // 왜 같을때는 안될까? -> 다음 간격까지 두 트랙 중 작은 트랙을 채운다 -> 무조건 작은쪽은 긴쪽이 된다.
+        // 항상 다음 간격을 채우려고 하기 때문에 두 트랙은 같을 수 없다.
+        // 그렇기에 꽉찰 수 없다.
         return false;
     }
 }
