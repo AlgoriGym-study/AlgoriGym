@@ -1,3 +1,4 @@
+package Algorithm_Study.daily.PJE.D202509;
 // 프로그래머스 공원산책
 public class D20250921 {
         static int R, C;
