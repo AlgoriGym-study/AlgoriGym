@@ -10,6 +10,7 @@
    - 5번 : 이영우
    - 6번 : 김미림
    - 7번 : 김선민
+   - 8번 : 이예린
 2. **공통 과제 풀이 후 코드 리뷰**
    - 문제 풀이 후 화요일까지 깃허브에 업로드 (꼼꼼한 주석 작성)
    - 수요일 미팅 전까지 코드 리뷰 진행 (꼼꼼한 코드 리뷰 필수!)
@@ -124,4 +125,5 @@
 | 이영우 | [GitHub](https://github.com/youngwoo2) |
 | 윤현석 | [GitHub](https://github.com/dbscjstk3) |
 | 김선민 | [GitHub](https://github.com/seonmiki) |
+| 이예린 | [GitHub](https://github.com/lreowy) |
 ---
