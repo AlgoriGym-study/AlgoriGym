@@ -1,4 +1,4 @@
-package Algorithm_Study.daily.LYR;
+package Algorithm_Study.daily.LYR.Dec2025;
 
 public class D20251222 {
     public long solution(int a, int b) {
