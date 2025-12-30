@@ -1,4 +1,4 @@
-package Algorithm_Study.daily.LYR;
+package Algorithm_Study.daily.LYR.Nov2025;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package Algorithm_Study.daily.LYR;
+package Algorithm_Study.daily.LYR.Dec2025;
 
 public class D20251226 {
     public String solution(String s) {

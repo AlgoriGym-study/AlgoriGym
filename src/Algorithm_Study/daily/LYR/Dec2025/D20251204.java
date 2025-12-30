@@ -1,4 +1,4 @@
-package Algorithm_Study.daily.LYR;
+package Algorithm_Study.daily.LYR.Dec2025;
 
 import java.util.StringTokenizer;
 

@@ -1,7 +1,7 @@
 package Algorithm_Study.daily.PJE.D202510;
 import java.util.*;
 //프로그래머스 순위
-public class Solution {
+public class D20251024 {
     static List<Integer>[] winGraph;  // i가 이긴 선수 목록
     static List<Integer>[] loseGraph; // i를 이긴 선수 목록
     static boolean[] visited;

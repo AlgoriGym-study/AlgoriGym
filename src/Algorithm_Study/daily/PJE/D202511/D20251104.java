@@ -1,7 +1,7 @@
 package Algorithm_Study.daily.PJE.D202511;
 import java.util.*;
 
-public class D20251103 {
+public class D20251104 {
     public int solution(String[][] clothes) {
         Map<String, Integer> byType = new HashMap<>();
         for (String[] c : clothes) {
