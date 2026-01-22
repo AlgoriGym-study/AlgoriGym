@@ -3,7 +3,7 @@ package Algorithm_Study.daily.LYW;
 import java.io.*;
 import java.util.*;
 
-public class D2026_01_22 {
+public class D2026_01_21 {
     static int w, h;
 
     static int toPerimeterPos(int dir, int dist) {
