@@ -1,4 +1,4 @@
-package Algorithm_Study.daily.LYR.Jan2026;
+package Algorithm_Study.daily.LYR.Feb2026;
 
 import java.util.ArrayList;
 import java.util.HashMap;
