@@ -86,4 +86,19 @@ public class D20260207 {
     private int lcm(int n, int m){
         return n * m / gcd(n,m);
     }
+
+    public int solution(String t, String p) {
+        int answer = 0;
+        long target = Long.parseLong(p);
+        for(int i=0;i<t.length()-p.length()+1;i++){
+            String s = "";
+            for(int j=i;j<i+p.length();j++){
+                s += Character.toString(t.charAt(j));
+            }
+            long num = Long.parseLong(s);
+            if(target >= num)
+                answer++;
+        }
+        return answer;
+    }
 }
