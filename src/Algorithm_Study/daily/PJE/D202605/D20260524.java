@@ -1,3 +1,4 @@
+package Algorithm_Study.daily.PJE.D202605;
 public class D20260524 {
     public int solution(int[] arr) {
         // 최소공배수는 (전체곱/최대공약수)
