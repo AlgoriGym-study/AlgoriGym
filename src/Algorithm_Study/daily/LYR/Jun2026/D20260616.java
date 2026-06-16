@@ -1,0 +1,14 @@
+package Algorithm_Study.daily.LYR.Jun2026;
+
+public class D20260616 {
+    public int solution(int[] numbers) {
+        int answer = 0;
+        for(int i=0;i<numbers.length;i++){
+            for(int j=i+1;j<numbers.length;j++){
+                if(answer < numbers[i] * numbers[j])
+                    answer = numbers[i] * numbers[j];
+            }
+        }
+        return answer;
+    }
+}
