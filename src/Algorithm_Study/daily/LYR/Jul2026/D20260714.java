@@ -9,4 +9,10 @@ public class D20260714 {
             answer = a - b;
         return answer;
     }
+    public int solution(int num, int n) {
+        if(num % n == 0)
+            return 1;
+        else
+            return 0;
+    }
 }
