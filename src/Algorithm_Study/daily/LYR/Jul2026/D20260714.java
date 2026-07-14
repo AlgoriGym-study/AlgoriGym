@@ -15,4 +15,12 @@ public class D20260714 {
         else
             return 0;
     }
+
+    public int[] solution(int[] num_list, int n) {
+        int[] answer = new int[n];
+        for(int i=0;i<n;i++){
+            answer[i] = num_list[i];
+        }
+        return answer;
+    }
 }
